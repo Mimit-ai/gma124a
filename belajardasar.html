@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GO GREEN - Login</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+        
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #052e16, #166534, #4ade80);
+            overflow: hidden;
+        }
+        
+        .circle {
+            position: absolute;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.08);
+        }
+        
+        .circle.one {
+            width: 300px;
+            height: 300px;
+            top: -100px;
+            left: -80px;
+        }
+        
+        .circle.two {
+            width: 400px;
+            height: 400px;
+            bottom: -180px;
+            right: -100px;
+        }
+        
+        .login-box {
+            width: 380px;
+            padding: 40px 35px;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 25px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            position: relative;
+            z-index: 1;
+            animation: muncul 1s ease;
+        }
+        
+        @keyframes muncul {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .logo {
+            font-size: 55px;
+            margin-bottom: 5px;
+        }
+        
+        h1 {
+            color: #166534;
+            font-size: 30px;
+            letter-spacing: 2px;
+            font-weight: 800;
+        }
+        
+        .subtitle {
+            color: #64748b;
+            font-size: 13px;
+            margin: 10px 0 30px;
+        }
+        
+        .input-box {
+            text-align: left;
+            margin-bottom: 20px;
+        }
+        
+        .input-box label {
+            display: block;
+            color: #166534;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        
+        .input-box input {
+            width: 100%;
+            padding: 14px;
+            border: 2px solid #dcfce7;
+            border-radius: 12px;
+            outline: none;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+        
+        .input-box input:focus {
+            border-color: #16a34a;
+            box-shadow: 0 0 8px rgba(22, 163, 74, 0.2);
+        }
+        
+        .options {
+            display: flex;
+            justify-content: space-between;
+            font-size: 12px;
+            margin-bottom: 25px;
+        }
+        
+        .options a {
+            color: #15803d;
+            text-decoration: none;
+        }
+        
+        .login-btn {
+            width: 100%;
+            padding: 14px;
+            background: linear-gradient(90deg, #15803d, #22c55e);
+            border: none;
+            border-radius: 12px;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        
+        .login-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(21, 128, 61, 0.3);
+        }
+        
+        .register {
+            margin-top: 25px;
+            font-size: 13px;
+            color: #64748b;
+        }
+        
+        .register a {
+            color: #15803d;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        
+        .footer {
+            margin-top: 25px;
+            font-size: 11px;
+            color: #94a3b8;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="circle one"></div>
+    <div class="circle two"></div>
+
+    <div class="login-box">
+
+        <div class="logo">🌿</div>
+
+        <h1>GO GREEN</h1>
+
+        <p class="subtitle">
+            Login to Your Green World
+            <br> Save Nature, Save Our Future
+        </p>
+
+        <form action="#" method="post">
+
+            <div class="input-box">
+                <label>Username</label>
+                <input type="text" placeholder="Masukkan username" required>
+            </div>
+
+            <div class="input-box">
+                <label>Password</label>
+                <input type="password" placeholder="Masukkan password" required>
+            </div>
+
+            <div class="options">
+                <label>
+                    <input type="checkbox">
+                    Remember Me
+                </label>
+
+                <a href="#">Forgot Password?</a>
+            </div>
+
+            <button type="submit" class="login-btn">
+                LOGIN →
+            </button>
+
+        </form>
+
+        <div class="register">
+            Don't have an account?
+            <a href="#">Sign Up</a>
+        </div>
+
+        <div class="footer">
+            © 2026 GO GREEN | Love Earth, Live Green 🌱
+        </div>
+
+    </div>
+
+</body>
+
+</html>
